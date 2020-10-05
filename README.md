@@ -16,6 +16,7 @@ docker run \
 The resulting binaries are in the `output` folder.
 
 ## Original readme
+```
 * * * * * * * * * * * * * * *
 * PolyBench/C 4.2.1 (beta)  *
 * * * * * * * * * * * * * * *
@@ -255,7 +256,7 @@ They are all passed as macro definitions during compilation time (e.g,
 
 - POLYBENCH_TIME: output execution time (gettimeofday) [default: off]
 
-- MINI_DATASET, SMALL_DATASET, MEDIUM_DATASET, LARGE_DATASET,
+- MINI_DATASET, SMALL_D```ATASET, MEDIUM_DATASET, LARGE_DATASET,
   EXTRALARGE_DATASET: set the dataset size to be used
   [default: STANDARD_DATASET]
 
@@ -332,7 +333,7 @@ there is no sampling being used for the counter value.
 With kernels that have an execution time in the orders of a few tens
 of milliseconds, it is critical to validate any performance number by
 repeating several times the experiment. A companion script is
-available to perform reasonable performance measurement of a PolyBench.
+available to perform reason```ble performance measurement of a PolyBench.
 
 $> gcc -O3 -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-algebra/kernels/atax/atax.c -DPOLYBENCH_TIME -o atax_time
 $> ./utilities/time_benchmark.sh ./atax_time
@@ -379,3 +380,4 @@ makefile-gen.pl: generates make files in each directory. Options are globally
 
     run-all.pl: compiles and runs each kernel.
       clean.pl: runs make clean in each directory and then removes Makefile.
+```
