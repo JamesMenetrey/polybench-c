@@ -4,6 +4,6 @@ SCRIPT_PATH=$(dirname $(realpath $0))
 # exit when any command fails
 set -e
 
-cd /polybench
+cd $SCRIPT_PATH
 utilities/makefile-gen.pl .
-utilities/compile-all.sh
+CC=/opt/wasi-sdk/bin/clang CXX=/opt/wasi-sdk/bin/clang++ utilities/compile-all.sh
