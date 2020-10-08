@@ -394,7 +394,7 @@ void polybench_timer_stop()
 void polybench_timer_print()
 {
 #ifdef POLYBENCH_CLOCK_TIMER
-  printf("%lld\n", polybench_clock_end - polybench_clock_start);
+  printf("%ld\n", polybench_clock_end - polybench_clock_start);
 #elif !defined(POLYBENCH_GFLOPS)
       if  (polybench_program_total_flops == 0)
 	{

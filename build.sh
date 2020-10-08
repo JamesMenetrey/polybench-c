@@ -6,4 +6,4 @@ set -e
 
 cd $SCRIPT_PATH
 utilities/makefile-gen.pl .
-CC=/opt/wasi-sdk/bin/clang CXX=/opt/wasi-sdk/bin/clang++ utilities/compile-all.sh
+CC=clang CXX=clang++ utilities/compile-all.sh
